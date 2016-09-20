@@ -1,5 +1,10 @@
 # Lupus-NetSVM
-Use machine learning on GIANT tissue-specific functional genomic networks to 'boost' disease differential expression signal.
+**Use machine learning on GIANT tissue-specific functional genomic networks to 
+'boost' disease differential expression signal.**
+
+A similar approach has been applied to drug studies with molecular data in
+the autoimmune disease systemic sclerosis; that work will be presented as an 
+oral presentation at the *2016 American College of Rheumatology Annual Meeting*.
 
 ## Overview
 
@@ -7,7 +12,8 @@ The objective of this project is to identify changes in lupus nephritis kidney
 that are *highly-specific* to the tubulointerstitium and glomeruli. 
 
 We used gene expression from lupus nephritis kidney biopsies originally analyzed 
-as part of [Berthier et al. J Immunol. 2012.](https://www.ncbi.nlm.nih.gov/pubmed/22723521). 
+as part of 
+[Berthier et al. J Immunol. 2012.](https://www.ncbi.nlm.nih.gov/pubmed/22723521). 
 This expression data is deposited in GEO under the accession number
 [GSE32591](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE32591).
 
