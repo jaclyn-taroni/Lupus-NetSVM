@@ -1,0 +1,2 @@
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE32nnn/GSE32591/suppl/GSE32591%5Fmatrix%5Ftubulointerstitium%2Etxt%2Egz
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE32nnn/GSE32591/suppl/GSE32591%5Fmatrix%5Fglomeruli%2Etxt%2Egz
