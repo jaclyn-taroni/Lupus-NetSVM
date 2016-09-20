@@ -48,6 +48,3 @@ RUN hg clone https://bitbucket.org/libsleipnir/sleipnir
 RUN cd sleipnir && ./gen_auto && ./gen_tools_am
 RUN cd sleipnir && ./configure --with-svm-perf=~/svmperf/ && make && make install
 
-# Install git repo
-RUN git clone https://github.com/jaclyn-taroni/Lupus-NetSVM.git
-
