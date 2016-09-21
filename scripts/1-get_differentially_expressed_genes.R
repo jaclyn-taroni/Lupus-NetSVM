@@ -7,6 +7,9 @@
 
 #### packages ------------------------------------------------------------------
 
+suppressMessages(library(checkpoint))
+suppressMessages(checkpoint("2016-09-19", checkpointLocation = "."))
+
 library(Biobase)
 library(limma)
 library(data.table)

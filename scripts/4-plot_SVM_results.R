@@ -4,6 +4,9 @@
 
 #### packages & source ---------------------------------------------------------
 
+suppressMessages(library(checkpoint))
+suppressMessages(checkpoint("2016-09-19", checkpointLocation = "."))
+
 library(dplyr)
 library(reshape2)
 library(ggplot2)
