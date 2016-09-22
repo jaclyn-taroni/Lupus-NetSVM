@@ -15,10 +15,12 @@ that are unknown put supported by data and to do so in a manner that is
 context (tissue) specific. This approach has been succesfully applied to summary 
 statistics in GWAS data in a method termed **NetWAS**. See 
 [Greene et al. Nat Genet. 2015](http://www.ncbi.nlm.nih.gov/pubmed/25915600).
+This repository is a test case/example of applying this approach to differential
+gene expression.
 
 ## Overview
 
-The objective of this project is to identify changes in lupus nephritis kidney
+The objective of this analysis is to identify changes in lupus nephritis kidney
 that are *highly-specific* to the tubulointerstitium and glomeruli. 
 
 We used gene expression from lupus nephritis kidney biopsies originally analyzed 
