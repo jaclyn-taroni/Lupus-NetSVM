@@ -11,7 +11,7 @@ oral presentation at the *2016 American College of Rheumatology Annual Meeting*.
 
 We aim to put differentially expressed genes into biological context in a manner 
 that does not rely on curated gene sets. This allows us to identify relationships 
-that are unknown put supported by data and to do so in a manner that is 
+that are unknown but supported by data and to do so in a manner that is 
 context (tissue) specific. This approach has been succesfully applied to summary 
 statistics in GWAS data in a method termed **NetWAS**. See 
 [Greene et al. Nat Genet. 2015](http://www.ncbi.nlm.nih.gov/pubmed/25915600).
