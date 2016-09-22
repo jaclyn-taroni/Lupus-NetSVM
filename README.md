@@ -25,7 +25,19 @@ SVM that learns the genes' connectivity patterns in the kidney functional
 genomic network from [GIANT](giant.princeton.edu) 
 ([Greene et al. Nat Genet. 2015](http://www.ncbi.nlm.nih.gov/pubmed/25915600)).
 
-## Requirements
+## Analysis
+
+Scripts for our analyses are in the scripts folder. 
+The entire pipeline can be performed by running
+```
+./run_experiments.sh
+```
+in the top directory.
+
+
+## Dependencies
 
 R, the R packages in `install_packages.R` and 
 [Sleipnir](http://libsleipnir.bitbucket.org/index.html) with SVMPerf.
+
+We are in the process of preparing a Docker image. 
