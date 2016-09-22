@@ -10,7 +10,6 @@ suppressMessages(checkpoint("2016-09-19", checkpointLocation = "."))
 library(dplyr)
 library(reshape2)
 library(ggplot2)
-library(data.table)
 
 source("util/theme_black.R")
 
@@ -36,12 +35,11 @@ symbol.svm.file <-
 
 #### read in data --------------------------------------------------------------
 
-tub.degs <- data.table::fread(tub.file, data.table = F)
-glom.degs <- data.table::fread(glom.file, data.table = F)
-svm.df <- data.table::fread(svm.file, header = F, data.table = F)
+tub.degs <- read.delim(tub.file)
+glom.degs <- read.delim(glom.file)
+svm.df <- read.delim(svm.file, header = F)
 colnames(svm.df) <- c("Entrez.ID", "Standard", "SVM.Score")
-symbol2entrez.mapping <- data.table::fread(symbol.entrez.file, header = F,
-                                           data.table = F)
+symbol2entrez.mapping <- read.delim(symbol.entrez.file, header = F)
 colnames(symbol2entrez.mapping) <- c("Gene.Symbol", "Entrez.ID")
 
 #### map gene identifiers back to gene symbols ---------------------------------
