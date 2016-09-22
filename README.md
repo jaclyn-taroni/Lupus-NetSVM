@@ -7,6 +7,15 @@ A similar approach has been applied to drug studies with molecular data in
 the autoimmune disease systemic sclerosis; that work will be presented as an 
 oral presentation at the *2016 American College of Rheumatology Annual Meeting*.
 
+## Rationale
+
+We aim to put differentially expressed genes into biological context in a manner 
+that does not rely on curated gene sets. This allows us to identify relationships 
+that are unknown put supported by data and to do so in a manner that is 
+context (tissue) specific. This approach has been succesfully applied to summary 
+statistics in GWAS data in a method termed **NetWAS**. See 
+[Greene et al. Nat Genet. 2015](http://www.ncbi.nlm.nih.gov/pubmed/25915600).
+
 ## Overview
 
 The objective of this project is to identify changes in lupus nephritis kidney
