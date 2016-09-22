@@ -9,6 +9,7 @@ suppressMessages(library(checkpoint))
 suppressMessages(checkpoint("2016-09-19", checkpointLocation = "."))
 
 library(dplyr)
+library(data.table)
 
 #### setup filenames -----------------------------------------------------------
 # directories 
@@ -26,9 +27,10 @@ standard.file <-
 
 #### read in data --------------------------------------------------------------
 
-tub.degs <- read.delim(tub.file)
-glom.degs <- read.delim(glom.file)
-symbol2entrez.mapping <- read.delim(symbol.entrez.file, header = F)
+tub.degs <- data.table::fread(tub.file, data.table = F)
+glom.degs <- data.table::fread(glom.file, data.table = F)
+symbol2entrez.mapping <- data.table::fread(symbol.entrez.file, header = F,
+                                           data.table = F)
 colnames(symbol2entrez.mapping) <- c("Gene.Symbol", "Entrez.ID")
 
 #### generate standard --------------------------------------------------------
