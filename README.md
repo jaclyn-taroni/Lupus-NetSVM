@@ -24,3 +24,8 @@ controls in each compartment separately. We then supply these genes as negative
 SVM that learns the genes' connectivity patterns in the kidney functional 
 genomic network from [GIANT](giant.princeton.edu) 
 ([Greene et al. Nat Genet. 2015](http://www.ncbi.nlm.nih.gov/pubmed/25915600)).
+
+## Requirements
+
+R, the R packages in `install_packages.R` and 
+[Sleipnir](http://libsleipnir.bitbucket.org/index.html) with SVMPerf.
