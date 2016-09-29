@@ -41,10 +41,11 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN wget -nv http://download.joachims.org/svm_perf/current/svm_perf.tar.gz \
 --directory-prefix svmperf/
-RUN cd svmperf && tar -xf svm_perf.tar.gz && make
+RUN cd svmperf && tar -xf svm_perf.tar.gz && make && ar rcs libsvmperf.a *.o */*.o
+RUN cd .. && mv svmperf /usr/local
 
 RUN hg clone https://bitbucket.org/libsleipnir/sleipnir
 
 RUN cd sleipnir && ./gen_auto && ./gen_tools_am
-RUN cd sleipnir && ./configure --with-svm-perf=~/svmperf/ && make && make install
+RUN cd sleipnir && ./configure --with-svm-perf=/usr/local/svmperf/ && make && make install
 
