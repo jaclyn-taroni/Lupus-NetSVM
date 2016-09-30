@@ -61,7 +61,7 @@ GetDEGS <- function(gset, grp.vector) {
   if (class(grp.vector) != "factor") {
     grp.vector <- as.factor(grp.vector)
   }
-  if (!(all(levels(glom.grp) == c("G0", "G1")))) {
+  if (!(all(levels(grp.vector) == c("G0", "G1")))) {
     stop("grp.vector levels must be G0 and G1")
   }
   
